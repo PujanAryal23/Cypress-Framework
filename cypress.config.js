@@ -11,17 +11,25 @@ module.exports = defineConfig({
     },
     "video": true,
     "screenshotOnRunFailure": true,
-    "reporter": "mochawesome",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
-      "reportDir": "cypress/results",
-      "overwrite": true,
-      "reportFilename": "TestResult",
-      "reportTitle": "Automation Test Results",
-      "charts": true,
-      "code": true,
-      "html": true,
-      "json": false,
-      "autoOpen":true
+      "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+      "cypressMochawesomeReporterReporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "reportFilename": "TestResult",
+        "reportTitle": "Automation Test Results",
+        "charts": true,
+        "code": true,
+        "html": true,
+        "json": false,
+        "autoOpen": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "mochaJunitReporterReporterOptions": {
+        "mochaFile": "cypress/reports/junit/results.xml"
+      }
     },
    setupNodeEvents(on, config) {
       // implement node event listeners here
