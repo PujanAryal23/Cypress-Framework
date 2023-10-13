@@ -12,7 +12,8 @@ module.exports = defineConfig({
     "reporter": "mochawesome",
     "reporterOptions": {
       "reportDir": "cypress/results",
-      "overwrite": false,
+      "overwrite": true,
+      "fileName": "TestResult",
       "cdn": true,
       "reportTitle": "Automation Test Results",
       "charts": true,
