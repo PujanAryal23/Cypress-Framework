@@ -9,11 +9,13 @@ module.exports = defineConfig({
       "username": "Admin",
       "password": "admin123"
     },
+    "video": true,
+    "screenshotOnRunFailure": true,
     "reporter": "mochawesome",
     "reporterOptions": {
       "reportDir": "cypress/results",
       "overwrite": true,
-      "fileName": "TestResult",
+      "reportFilename": "TestResult",
       "cdn": true,
       "reportTitle": "Automation Test Results",
       "charts": true,
