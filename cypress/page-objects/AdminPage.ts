@@ -23,7 +23,8 @@ class AdminPage{
     deleteButton = '.bi-trash';
     confirmYes = '.oxd-button>i.bi-trash';
 
-    enterUserName(name:string) {
+    enterUserName(name: string) {
+        console.log("Entering Username");
         cy.get(this.usernameTextBox).click().type(name);
     }
 
