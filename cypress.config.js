@@ -16,7 +16,6 @@ module.exports = defineConfig({
       "reportDir": "cypress/results",
       "overwrite": true,
       "reportFilename": "TestResult",
-      "cdn": true,
       "reportTitle": "Automation Test Results",
       "charts": true,
       "code": true,
