@@ -24,8 +24,7 @@ module.exports = defineConfig({
         "html": true,
         "json": false,
         "autoOpen": true,
-        "embeddedScreenshots": true,
-        "cdn": true
+        "embeddedScreenshots": true
       },
       "mochaJunitReporterReporterOptions": {
         "mochaFile": "cypress/results/results.xml"
