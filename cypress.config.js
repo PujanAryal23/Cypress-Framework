@@ -13,8 +13,8 @@ module.exports = defineConfig({
     "screenshotOnRunFailure": true,
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
-      "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
-      "cypressMochawesomeReporterReporterOptions": {
+      "reporterEnabled": "mochawesome, mocha-junit-reporter",
+      "mochawesomeReporterOptions": {
         "reportDir": "cypress/results",
         "overwrite": true,
         "reportFilename": "TestResult",
@@ -28,7 +28,7 @@ module.exports = defineConfig({
         "inlineAssets": true
       },
       "mochaJunitReporterReporterOptions": {
-        "mochaFile": "cypress/reports/junit/results.xml"
+        "mochaFile": "cypress/results/results.xml"
       }
     },
    setupNodeEvents(on, config) {
