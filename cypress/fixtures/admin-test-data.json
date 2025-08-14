@@ -5,6 +5,5 @@
     "pageHeaders":["Username","User Role","Employee Name","Status","Actions"],
     "expectedSearchResult":["Admin","Admin","Paul 65756^ Xyz","Enabled"],
     "name":"Mary Clefable Fabian Prewett",
-    "newUserName":"PAryal",
-    "password":"Test123$"
+    "newUserName":"PAryal"
 }
